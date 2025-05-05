@@ -6,6 +6,8 @@
 @theme{
   --color-dark-1: #1c1f2e;
   --color-dark-2: #161925;
+
+  --color-blue-1: #0e78f9;
 }
 
 @theme inline {
