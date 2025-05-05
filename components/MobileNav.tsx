@@ -25,8 +25,8 @@ const MobileNav = () => {
           <Image
             src="/icons/logo.svg"
             alt='Umeet Logo'
-            width={62}
-            height={62}
+            width={57}
+            height={57}
             className='max-sm:size-16'
           />
             <p className="text-[26px] font-extrabold text-white">
