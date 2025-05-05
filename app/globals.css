@@ -8,7 +8,14 @@
   --color-dark-2: #161925;
 
   --color-blue-1: #0e78f9;
+}
 
+@utility flex-center {
+  @apply flex justify-center items-center;
+}
+
+@utility flex-between {
+  @apply flex justify-between items-center;
 }
 
 @theme inline {
