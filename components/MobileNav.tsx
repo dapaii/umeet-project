@@ -15,8 +15,8 @@ const MobileNav = () => {
         <Image
           src='/icons/hamburger.svg'
           alt="hamburger icon"
-          width={36}
-          height={36}
+          width={46}
+          height={46}
           className="cursor-pointer sm:hidden"
         />
       </SheetTrigger>
