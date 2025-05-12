@@ -25,13 +25,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-    <ClerkProvider>
-      <body
-        // custom collor
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-dark-2`}
-      >
-        {children}
-      </body>
+      <ClerkProvider>
+        <body
+          // custom collor
+          className={`${geistSans.variable} ${geistMono.variable} antialiased bg-dark-2`}
+        >
+          {children}
+        </body>
       </ClerkProvider>
       {/* menghubungkan clerk dengan program */}
     </html>
