@@ -7,11 +7,11 @@ import { useUser } from '@clerk/nextjs'
 import { Call, useStreamVideoClient } from '@stream-io/video-react-sdk'
 import { toast } from "sonner"
 
-
 const MeetingTypleList = () => {
   const router = useRouter();
 
   const [meetingState, setMeetingState] = useState<'isScheduleMeeting' | 'isJoiningMeeting' | 'isInstantMeeting' | undefined>();
+  
   const {user} = useUser();
   const client = useStreamVideoClient();
   const [values, setValues] = useState({
@@ -21,7 +21,6 @@ const MeetingTypleList = () => {
   })
 
   const [callDetails, setCallDetails] = useState<Call>()
-  
 
   const createMeeting = async () =>{
     if(!client || !user) return;
@@ -52,7 +51,7 @@ const MeetingTypleList = () => {
     setCallDetails(call);
 
     if(!values.description) {
-      router.push('/meeting/${call.id}')
+      router.push(`/meeting/${call.id}`)
     }
     
     toast("Meeting created")

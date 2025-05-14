@@ -1,11 +1,10 @@
 'use client'
-import { Sheet, SheetClose, SheetContent, SheetTrigger,} from "@/components/ui/sheet"
+import { Sheet, SheetClose, SheetContent, SheetTitle, SheetTrigger,} from "@/components/ui/sheet"
 import { sidebarLinks } from "@/constants"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-
 
 const MobileNav = () => {
   const pathname = usePathname()
@@ -21,6 +20,7 @@ const MobileNav = () => {
         />
       </SheetTrigger>
       <SheetContent side="left" className="border-none bg-dark-1 pt-6 pb-0">
+      <SheetTitle></SheetTitle>
         <Link href='/' className="flex items-center gap-1">
           <Image
             src="/icons/logo.svg"
