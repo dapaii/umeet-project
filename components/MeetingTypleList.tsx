@@ -134,7 +134,7 @@ const MeetingTypleList = () => {
         className="text-center"
         handleClick={() => {
           navigator.clipboard.writeText(meetingLink);
-          toast({title: 'Link copied to clipboard',});
+          toast("Link copied to clipboard")
         }}
         image='/icons/checked.svg'
         buttonIcon='/icons/copy.svg'
